@@ -1,6 +1,9 @@
 package assignment;
 import java.util.Scanner;
 public class Assignment_Of_Day3 {
+
+
+
 	public static void main(String[] args){
 		
 		Army troop=new Army(10);
