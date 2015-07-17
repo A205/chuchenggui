@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:paddingTop="10dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     >
     <TextView
+        android:id="@+id/playing_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="Heojjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkk"
+        android:textSize="30dp"
+        android:text="断桥残雪"
         android:lines="1"
         android:focusable="true"
         android:focusableInTouchMode="true"
@@ -17,11 +19,48 @@
         android:marqueeRepeatLimit="marquee_forever"
         android:ellipsize="marquee"
         android:background="@android:color/transparent"
+        android:layout_weight="0.5"
         />
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="9"
         android:src="@drawable/ic_start"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+
+        android:layout_weight="0.5"
+
+
+        >
+        <Button
+            android:id="@+id/btn2_previous"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:background="@drawable/ic_next"
+            />
+
+        <Button
+            android:id="@+id/btn2_play_pause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:background="@drawable/ic_play"
+
+            />
+        <Button
+            android:id="@+id/btn2_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:background="@drawable/ic_next"/>
+    </LinearLayout>
 
 </LinearLayout>

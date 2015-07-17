@@ -13,12 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height= "wrap_content"
-            android:text="dfdkfjd"
-            android:textSize="25dp"
-            />
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height= "wrap_content"-->
+            <!--android:text="gfgsdf"-->
+            <!--android:textSize="25sp"-->
+            <!--/>-->
 
 
         <TabWidget
@@ -36,73 +36,34 @@
             <LinearLayout
                 android:id="@+id/tab01"
                 android:orientation="vertical"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="fill_parent">
-
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-
-
-                    >
+                    android:layout_height="wrap_content">
                     <Button
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:background="@drawable/ic_record"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#44ff00ff"/>
                     <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="20dp"
-                        android:gravity="left|bottom"
-                        android:textSize="20dp"
-                        android:background="#0000"
-                        android:text="断桥残雪"
-                        />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#44ff00ff"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#44ff00ff"/>
                 </LinearLayout>
-                <LinearLayout
+
+
+                <ListView
+                    android:id="@+id/list_1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:orientation="horizontal"
-
-
-                    >
-                    <Button
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:background="@drawable/ic_record"/>
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="20dp"
-                        android:gravity="left|bottom"
-                        android:textSize="20dp"
-                        android:background="#0000"
-                        android:text="断桥残雪"
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-
-
-                    >
-                    <Button
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:background="@drawable/ic_record"/>
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="20dp"
-                        android:gravity="left|bottom"
-                        android:textSize="20dp"
-                        android:background="#0000"
-                        android:text="断桥残雪"
-                        />
-                </LinearLayout>
+                    android:layout_height="wrap_content">
+                </ListView>
 
 
             </LinearLayout>
@@ -111,6 +72,37 @@
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id ="@+id/btn_playing_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#44ff00ff"
+                        android:text="顺序"
+                        android:textSize="20sp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#44ff00ff"/>
+                    <Button
+                        android:id="@+id/btn_addtolist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#44ff00ff"
+                        android:text="添加"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ListView>
+
 
 
             </LinearLayout>
@@ -120,38 +112,44 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
 
+                <ListView
+                    android:id="@+id/list_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ListView>
+
             </LinearLayout>
         </FrameLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="10dp"
-            android:gravity="left">
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/ic_play_decoration"/>
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                android:text="断桥残雪"
-                android:textSize="30dp"
-                />
-            <Button
-                android:id="@+id/btn_play_pause"
-                android:layout_width="35dp"
-                android:layout_height="40dp"
-                android:background="@drawable/ic_pause"
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:gravity="left">-->
+            <!--<ImageView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:src="@drawable/ic_play_decoration"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/name_of_music"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:text="断桥残雪"-->
+                <!--android:textSize="30dp"-->
+                <!--/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_play_pause"-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@drawable/ic_pause"-->
 
-                />
-            <Button
-                android:id="@+id/btn_next"
-                android:layout_width="35dp"
-                android:layout_height="40dp"
-                android:background="@drawable/ic_next"/>
-        </LinearLayout>
+                <!--/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_next"-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@drawable/button_seletor"/>-->
+        <!--</LinearLayout>-->
     </LinearLayout>
 </TabHost>

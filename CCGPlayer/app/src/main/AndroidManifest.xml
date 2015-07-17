@@ -18,6 +18,12 @@
         </activity>
         <activity android:name=".MainInterface"></activity>
         <activity android:name=".PlayerInterface"></activity>
+        <activity android:name=".Activity_ChangeList"></activity>
+        <service android:name=".PlayerService">
+            <intent-filter>
+                <action android:name="org.MagicTechnology.service.First_service"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
